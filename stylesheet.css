@@ -1,0 +1,73 @@
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
+
+html { 
+  background: url(images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+
+a{
+	text-decoration: none;
+	color: #DD5052;
+
+}
+.navbar {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navbar ul{
+	text-align: center;
+}
+
+.navbar li{
+	text-align: left;
+	font-family: "Josefin Slab"; 
+	font-size: 30px;
+	color: #DD5052;
+	padding: 0px 15px 0px 15px;
+	list-style: none;
+	display: inline;
+}
+
+#header {
+	font-family: "Great Vibes";
+	text-align: center;
+	font-size: 40px;
+	color: rgba(60,50,56, .9);
+}
+
+
+.contentbox {
+	background-color:rgba(255,255,255,0.7);
+	padding: 20px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	width: 700px
+}
+
+.contentbox p {
+	color: black;
+	font-weight: bold;
+}
+
+.contentbox img {
+	display: block;
+	background-color: rgba(60,50,56,.2);
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contentbox #rsvpform {
+	display: block;
+	background-color: rgba(60,50,56,.2);
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
