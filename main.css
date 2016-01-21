@@ -1,9 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
-@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
+/*@import url(http://fonts.googleapis.com/css?family=Great+Vibes);*/
+@import url(https://fonts.googleapis.com/css?family=Actor);
+
+@font-face {
+	font-family: 'Day Dreamer';
+	src: url('fonts/Daydreamer.ttf');
+}
 
 body {
 	width: 100%;
 	height: 100%;
+	font-family: 'Actor', sans-serif;
 }
 
 html {
@@ -12,31 +18,51 @@ html {
   /*background: url(img/background1.jpg) no-repeat center center fixed;*/
 }
 
-.nav {
-}
-
 a{
 	text-decoration: none;
+	font-family: 'Actor', sans-serif;
 	color: #DD5052;
 }
 
 a:hover {
 	text-decoration: none;
+	color:;
+}
+
+h2 {
+	font-family: 'Day Dreamer', sans-serif;
+	text-align: center;
+	font-size: 60px;
+	color: #DD5052;
+}
+
+.nav {
+	opacity: 0.95;
 }
 
 #logo {
+	font-family: "Day Dreamer", sans-serif;
 	display: inline;
-	color: red;
+	color: #DD5052;
+	font-size: 25px;
 }
 
-#splash-image {
+#specialk {
+	letter-spacing: -3px;
+}
+
+.glyphicon {
+	font-size: 15px;
+}
+
+.intro {
 	display: table;
 	width: 100%;
 	height: auto;
 	padding: 100px 0;
 	text-align: center;
 	color: #fff;
-	background: url(img/background1.jpg) no-repeat center center fixed;
+	background: url(img/Beacham-1154.jpg) no-repeat center center;
 	background-color: #fff;
   -webkit-background-size: cover;
   -mox-background-size: cover;
@@ -44,31 +70,122 @@ a:hover {
   -o-background-size: cover;
 }
 
-#splash-image h1{
-	font-family: "Great Vibes";
+.intro-text {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.intro-text h1 {
+	font-family: "Day Dreamer", cursive;
 	text-align: center;
-	font-size: 100px;
+	font-size: 140px;
 	color: white;
   text-shadow: 5px 5px 20px black;
 }
 
-.pagebreak {
-	width: 100%;
-	height: 50px;
-	background-color: gray;
-
+.intro-text h3 {
+	font-size: 40px;
 }
 
-#aboutus h2 {
+.intro-text h4 {
+	font-family: 'Actor', sans-serif;
 	text-align: center;
+	font-size: 20px;
+	color: white;
 }
 
-#aboutus p {
-	padding: 10px;
+#aboutus {
+	background-color: #fff;
+	padding-top: 50px;
+}
 
+.infocard img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	height: 200px;
+	width: 200px;
+}
+
+#ourstory {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#mainevent {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#mainevent a {
+	font-family: "Day Dreamer", cursive;
+}
+
+#accommodations {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #fff;
+}
+
+#accommodations h3 {
+	padding-top: 70px;
+}
+
+.sidecard img {
+	height: auto;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	vertical-align: middle;
+}
+
+.venueinfo {
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.sidecard h3, h4 {
+	text-align: center;
+	color: black;
+}
+
+.text_padding {
+	padding-bottom: 20px;
+}
+
+.sidecard p {
+	text-align: center;
+	color: black;
+}
+
+#registry img {
+	padding-top: 60px;
+	width: 80%;
+	height: auto;
+	margin-left: 10%;
+}
+
+footer {
+	height: 100%;
+}
+
+.footerimage {
+	display: table;
+	width: 100%;
+	height: ;
+	background: url(img/Beacham-1243.jpg) no-repeat center center;
+	background-color: #fff;
+  -webkit-background-size: cover;
+  -mox-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 @media(min-width:767px) {
+	.intro {
+		height: 100%;
+		padding: 0;
+	}
 
 }
 
@@ -85,6 +202,6 @@ only screen and (min-device-pixel-ratio: 1.5){
     overflow-x: hidden;
     height: auto;
   }
-	
+
 
 }
