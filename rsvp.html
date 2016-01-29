@@ -1,45 +1,179 @@
 <!doctype html>
 <head>
-	<link rel="stylesheet" href="stylesheet.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Copatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<title> Kelly and Colby 2016 </title>
 </head>
 
 <body>
-	<div class="navbar">
-		<ul>
-			<li> <a href="index.html"> Home </a> </li>
-			<li> <a href="ourstory.html"> Our Story </a> </li>
-			<li> <a href="rsvp.html"> RSVP </a> </li>
-			<li> <a href="photos.html"> Photos </a> </li>
-			<li> <a href="venue.html"> Venue </a> </li>
-			<li> <a href="registry.html"> Registry </a> </li>
-		</ul>
-	</div>
-	<div id="header">
-		<h1>RSVP</h1>
-	</div>
-	
-	<div class="contentbox">
-		<div id="rsvpform">
-			<form action="rsvpform.php" name="form1" method="post">
-			<p> <label>Name: </label><input type="text" name="name" /> </p> 
-			<p> Are you coming? 
-				<select>
-					<option> Yes </option>
-					<option> No </option>
-				<select>
-			</p>
-			<p> +1? 
-				<select>
-					<option> Yes </option>
-					<option> No </option>
-				<select>
-			</p>
-			<input type="submit" name="submit"/>
-			</form>		
+
+	<div class='nav navbar-default navbar-fixed-top'>
+		<div class="container">
+			<div class='navbar-header col-sm-4'>
+				<button type='button' class='navbar-toggle'
+					data-toggle='collapse'
+					data-target='.navbar-collapse'>
+					<span class='sr-only'>Toggle Navigation</span>
+					<span class='icon-bar'></span>
+					<span class='icon-bar'></span>
+					<span class='icon-bar'></span>
+				</button>
+				<a class='navbar-brand' id='logo' href='index.html'><strong id='specialk'>K</strong>
+				<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+				<strong>C</strong></a>
+			</div>
+
+			<div class='col-sm-8'>
+				<ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+					<li class='navbar-left'><a href='index.html#aboutus'
+						data-toggle='collapse'
+						data-target='.navbar-collapse'>
+						About Us</a>
+					</li>
+					<li class='navbar-left'><a href='index.html#mainevent'
+						data-toggle='collapse'
+						data-target='.navbar-collapse'>
+						Main Event</a>
+					</li>
+					<li class='navbar-left'><a href='index.html#accommodations'
+						data-toggle='collapse'
+						data-target='.navbar-collapse'>
+						Accommodations</a>
+					</li>
+					<li class='navbar-left'><a href='rsvp.html'
+						data-toggle='collapse'
+						data-target='.navbar-collapse'>
+						RSVP</a>
+					</li>
+					<li class='navbar-left'><a href='index.html#registry'
+						data-toggle='collapse'
+						data-target='.navbar-collapse'>
+						Registry</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
-	
+
+
+	<div id='rsvp' class='container'>
+
+		<h2> RSVP </h2>
+
+
+
+	<form class="form-horizontal" id="form_guests" role="form" action="rsvpform.php" method="POST" target="rsvp.html">
+			<!--<div class="form-group">
+				<div class="col-xs-offset-2 col-xs-8">
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-default"><input type="radio" id="yes" value="1"> Will be there! </label>
+						<label class="btn btn-default"><input type="radio" id="yes" value="1"> Will be celebrating from afar! </label>
+					</div>
+				</div>
+			</div>-->
+			<div class="form-group formInstance">
+
+				<div class="namefield row">
+					<div class="input-group col-xs-offset-2 col-xs-8">
+						<span class="input-group-addon" id="basic-addon1">
+								<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+						</span>
+						<input type="text" class="form-control" name="name" placeholder="Guest Name">
+						<span class="input-group-btn">
+							<button class="btn btn-default add-guest" type="button">+ Guest</button>
+						</span>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="text_padding col-xs-offset-2 col-xs-8">
+						<label class="radio-inline">
+							<input type="radio" name="coming" id="Yes" value="Yes"> Accept: Will be there!
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="coming" id="No" value="No"> Decline: Will celebrate from afar
+						</label>
+					</div>
+				</div>
+
+			</div>
+
+
+			<h4 class="col-xs-offset-2 col-xs-8"> Dietary Preferences </h4>
+			<p class="col-xs-offset-2 col-xs-8"> At the reception will be a delicious
+				burger bar from white horse farm catering. Please let us know if you would
+				prefer a vegetarian patty and/or a gluten free bun. <p>
+			<div class="form-group">
+				<div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-8">
+					<div class="checkbox">
+						<label>Vegan/Vegetarian<input type="text" class="form-control" name="vegGuests" placeholder="# of Guests"></label>
+					</div>
+				</div>
+				<div class="col-md-offset-0 col-md-4 col-xs-offset-2 col-xs-8">
+					<div class="checkbox">
+						<label>Gluten Free<input type="text" class="form-control" name="glutenGuests" placeholder="# of Guests"></label>
+					</div>
+				</div>
+			</div>
+
+			<h4 class="col-xs-offset-2 col-xs-8"> Will you be using the hotel shuttle? </h4>
+			<p class="col-xs-offset-2 col-xs-8"> There will be a shuttle bus available
+				at the Haworth Inn, Holland and Fairfield Inn, Watervliet to take guests
+				to and from the wedding venue.  <p>
+			<div class="form-group">
+				<div class="row">
+					<div class="text_padding col-xs-offset-2 col-xs-8">
+						<div class="checkbox">
+							<label class="checkbox-inline">
+								<input type="radio" name="shuttle" id="Yes" value="Yes"> Yes
+							</label>
+							<label class="checkbox-inline">
+								<input type="radio" name="shuttle" id="No" value="No"> No
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="text_padding col-xs-offset-2 col-xs-8">
+						<div class="checkbox">
+							<label>Pick Up/Drop Off Location
+								<select class="form-control" name="busPickup">
+									<option> Select Location </option>
+									<option> Haworth Inn, Holland </option>
+									<option> Fairfield Inn, Watervliet </option>
+								</select>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h4 class="col-xs-offset-2 col-xs-8"> Anything else you would like us to know? </h4>
+			<div class="form-group">
+				<div class="row">
+					<div class="text_padding col-xs-offset-2 col-xs-8">
+						<textarea type="text" class="form-control" name="other" placeholder="Additional Comments" rows="3"></textarea>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-xs-offset-2 col-xs-8">
+					<a href="index.html"> <button type="submit" class="btn btn-default btn-lg btn-block" name="submit" id="submit">Submit</button> </a>
+				</div>
+			</div>
+
+	</form>
+
+	</div>
+
+	<script src="addField.js"></script>
+
 </body>
 
 </html>
