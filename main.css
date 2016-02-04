@@ -137,6 +137,11 @@ h2 {
 	background-color: #fff;
 }
 
+#crock {
+	text-align: center;
+	padding-top: 20px;
+}
+
 #schedule p {
 	text-align: center;
 }
@@ -232,7 +237,7 @@ footer {
 .footerimage {
 	height: 48em;
 	width: 100%;
-	background: url(img/Beacham-1243_iphone.png) no-repeat center center scroll;
+	background: url(img/kandc_iphone.jpg) no-repeat center center scroll;
 	background-color: #fff;
 	background-size: cover;
   -webkit-background-size: cover;
@@ -296,7 +301,7 @@ footer {
 	.footerimage {
 		width: 100%;
 		height: 100%;
-		background: url(img/Beacham-1243_edit2.jpg) no-repeat center center scroll;
+		background: url(img/kandc.jpg) no-repeat center center scroll;
 		background-color: #fff;
 		background-size: cover;
 	  -webkit-background-size: cover;
